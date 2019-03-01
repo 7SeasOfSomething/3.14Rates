@@ -60,6 +60,11 @@ public class SailingScreen extends BaseScreen {
     private double timer;
     //End Altered
 
+    //Altered for Assessment 4
+    private int typhoonTimer = 0;
+    private boolean inTyphoon = false;
+    //End Altered
+
     public SailingScreen(final PirateGame main) {
         super(main);
 
@@ -303,13 +308,23 @@ public class SailingScreen extends BaseScreen {
         if (!y) hintMessage.setText("");
 
 
-        //TEST CODE FOR TYPHOON----------------------------------------------------
-        if(playerShip.overlaps(Typhoon,false)){
-            playerShip.damage(2);
-            //Just do the code from last time, more or less tbh
-            //pirateGame.getPlayer()
+        //Added for Assessment 4
+        if(playerShip.overlaps(typhoon,false)){
+            inTyphoon = true;
+            typhoonTimer++;
+            playerShip.setMaxSpeed(135); //Slow ship down in storm
+            if(typhoonTimer >= 45){
+                if(playerShip.getHealth() > (playerShip.getHealthMax()/4)){
+                    playerShip.damage(2);
+                }
+                typhoonTimer = 0;
+            }
+        } else if(inTyphoon){
+            inTyphoon = false;
+            typhoonTimer = 0;
+            playerShip.setMaxSpeed(200);
         }
-        //TEST CODE FOR TYPHOON----------------------------------------------------
+        //End of additions
 
         for (BaseActor object : removeList) {
             object.remove();

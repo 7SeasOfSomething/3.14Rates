@@ -302,6 +302,15 @@ public class SailingScreen extends BaseScreen {
 
         if (!y) hintMessage.setText("");
 
+
+        //TEST CODE FOR TYPHOON----------------------------------------------------
+        if(playerShip.overlaps(Typhoon,false)){
+            playerShip.damage(2);
+            //Just do the code from last time, more or less tbh
+            //pirateGame.getPlayer()
+        }
+        //TEST CODE FOR TYPHOON----------------------------------------------------
+
         for (BaseActor object : removeList) {
             object.remove();
         }

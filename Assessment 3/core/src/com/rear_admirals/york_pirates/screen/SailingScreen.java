@@ -13,13 +13,10 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Align;
-import com.rear_admirals.york_pirates.College;
-import com.rear_admirals.york_pirates.ShipType;
+import com.rear_admirals.york_pirates.*;
 import com.rear_admirals.york_pirates.screen.combat.CombatScreen;
 import com.rear_admirals.york_pirates.base.BaseActor;
-import com.rear_admirals.york_pirates.PirateGame;
 import com.rear_admirals.york_pirates.base.BaseScreen;
-import com.rear_admirals.york_pirates.Ship;
 
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
@@ -31,6 +28,7 @@ import static com.rear_admirals.york_pirates.ShipType.*;
 public class SailingScreen extends BaseScreen {
 
     private Ship playerShip;
+    private Typhoon typhoon; //added for assessment 4
 
     //Map Variables
     private ArrayList<BaseActor> obstacleList;
@@ -65,11 +63,19 @@ public class SailingScreen extends BaseScreen {
     public SailingScreen(final PirateGame main) {
         super(main);
 
+
         playerShip = main.getPlayer().getPlayerShip();
         System.out.println(playerShip.getName());
 
         mainStage.addActor(playerShip);
         System.out.println("playerShip added");
+
+        //Added for assessment 4
+        typhoon = new Typhoon();
+
+        mainStage.addActor(typhoon);
+        System.out.println("Typhoon added");
+        //END ADD---------------------------------------------
 
         Table uiTable = new Table();
 
@@ -126,6 +132,10 @@ public class SailingScreen extends BaseScreen {
 
             if (name.equals("player")) {
                 playerShip.setPosition(r.x, r.y);
+            //added for assessment 4
+            } else if (name.equals("typhoon")) {
+                typhoon.setPosition(r.x,r.y);
+            //END ADD
             } else {
                 System.err.println("Unknown tilemap object: " + name);
             }

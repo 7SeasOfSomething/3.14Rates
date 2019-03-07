@@ -19,6 +19,7 @@ import com.rear_admirals.york_pirates.base.BaseActor;
 import com.rear_admirals.york_pirates.base.BaseScreen;
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static com.rear_admirals.york_pirates.College.*;
@@ -140,6 +141,13 @@ public class SailingScreen extends BaseScreen {
             //added for assessment 4
             } else if (name.equals("typhoon")) {
                 typhoon.setPosition(r.x,r.y);
+                //sets the typhoon to a random position with relation to the size of the board and typhoon
+                //typhoon size: 900x900, map size: 2000,8000
+                Random rand = new Random();
+                //position from top left corner - math done to ensure the typhoon never clips out of the map
+                int typhoonX = rand.nextInt(2000-900);
+                int typhoonY = rand. nextInt(8000-900);
+                typhoon.setPosition(typhoonX,typhoonY);
             //END ADD
             } else {
                 System.err.println("Unknown tilemap object: " + name);

@@ -439,13 +439,29 @@ public class CombatScreen extends BaseScreen {
                 player.getPlayerShip().setSpeed(0);
                 player.getPlayerShip().setAccelerationXY(0,0);
                 if (enemy.getIsBoss() == true) {
+                    Ship playerShip = pirateGame.getPlayer().getPlayerShip();
                     enemy.getCollege().setBossDead(true);
                     this.player.getPlayerShip().getCollege().addAlly(this.enemy.getCollege());
+                    displayText = ("Congratulations, you have defeated Enemy " + enemy.getName());
+                    if (this.enemy.getCollege().getName() == "Derwent"){
+                        playerShip.setAttack(playerShip.getAttack() + 3);
+                        dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Attack up!", BattleEvent.SCENE_RETURN);
+                    } else if (this.enemy.getCollege().getName() == "Vanbrugh"){
+                        playerShip.setAttack(playerShip.getDefence() + 3);
+                        dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Defence up!", BattleEvent.SCENE_RETURN);
+                    } else if (this.enemy.getCollege().getName() == "James"){
+                        playerShip.setAttack(playerShip.getDefence() + 3);
+                        dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Defence up!", BattleEvent.SCENE_RETURN);
+                    } else if (this.enemy.getCollege().getName() == "Goodricke"){
+                        playerShip.setAttack(playerShip.getAttack() + 3);
+                        dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Attack up!", BattleEvent.SCENE_RETURN);
+                    }
                     dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);
                 } else {
                     dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);
                 }
                 break;
+
             case PLAYER_FLEES:
                 textBox.setStyle(pirateGame.getSkin().get("red", TextButton.TextButtonStyle.class));
                 player.addPoints(-5);

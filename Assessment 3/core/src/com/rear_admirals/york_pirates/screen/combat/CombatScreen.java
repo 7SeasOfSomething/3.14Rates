@@ -447,10 +447,10 @@ public class CombatScreen extends BaseScreen {
                         playerShip.setAttack(playerShip.getAttack() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Attack up!", BattleEvent.SCENE_RETURN);
                     } else if (this.enemy.getCollege().getName() == "Vanbrugh"){
-                        playerShip.setAttack(playerShip.getDefence() + 3);
+                        playerShip.getDefence(playerShip.getDefence() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Defence up!", BattleEvent.SCENE_RETURN);
                     } else if (this.enemy.getCollege().getName() == "James"){
-                        playerShip.setAttack(playerShip.getDefence() + 3);
+                        playerShip.getDefence(playerShip.getDefence() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Defence up!", BattleEvent.SCENE_RETURN);
                     } else if (this.enemy.getCollege().getName() == "Goodricke"){
                         playerShip.setAttack(playerShip.getAttack() + 3);

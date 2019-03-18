@@ -444,7 +444,7 @@ public class CombatScreen extends BaseScreen {
                     this.player.getPlayerShip().getCollege().addAlly(this.enemy.getCollege());
                     displayText = ("Congratulations, you have defeated Enemy " + enemy.getName());
 
-                    //Assessment code 4 starts now
+                    //Added for Assessment 4
                     if (this.enemy.getCollege().getName() == "Derwent"){
                         playerShip.setAttack(playerShip.getAttack() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Attack up!", BattleEvent.SCENE_RETURN);
@@ -461,7 +461,7 @@ public class CombatScreen extends BaseScreen {
                         dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);
                     }
 
-                    //And now it ends
+                    //End of Additions
 
                 } else {
                     dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);

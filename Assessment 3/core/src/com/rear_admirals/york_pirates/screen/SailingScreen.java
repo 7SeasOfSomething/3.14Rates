@@ -76,12 +76,12 @@ public class SailingScreen extends BaseScreen {
         mainStage.addActor(playerShip);
         System.out.println("playerShip added");
 
-        //Added for assessment 4
+        //Added for Assessment 4
         typhoon = new Typhoon();
 
         mainStage.addActor(typhoon);
         System.out.println("Typhoon added");
-        //END ADD---------------------------------------------
+        //End of Additions
 
         Table uiTable = new Table();
 
@@ -138,7 +138,7 @@ public class SailingScreen extends BaseScreen {
 
             if (name.equals("player")) {
                 playerShip.setPosition(r.x, r.y);
-            //added for assessment 4
+            //Added for Assessment 4
             } else if (name.equals("typhoon")) {
                 typhoon.setPosition(r.x,r.y);
                 //sets the typhoon to a random position with relation to the size of the board and typhoon
@@ -148,7 +148,7 @@ public class SailingScreen extends BaseScreen {
                 int typhoonX = rand.nextInt(2000-900);
                 int typhoonY = rand. nextInt(8000-900);
                 typhoon.setPosition(typhoonX,typhoonY);
-            //END ADD
+            //End of Additions
             } else {
                 System.err.println("Unknown tilemap object: " + name);
             }
@@ -332,7 +332,7 @@ public class SailingScreen extends BaseScreen {
             typhoonTimer = 0;
             playerShip.setMaxSpeed(200);
         }
-        //End of additions
+        //End of Additions
 
         for (BaseActor object : removeList) {
             object.remove();

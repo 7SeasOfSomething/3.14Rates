@@ -1,9 +1,12 @@
+//All new additions for Assessment 4.
+
 package com.rear_admirals.york_pirates;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.rear_admirals.york_pirates.base.PhysicsActor;
+
 
 public class Typhoon extends PhysicsActor {
 

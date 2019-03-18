@@ -16,7 +16,10 @@ public class VictoryScreen extends BaseScreen {
     public VictoryScreen(PirateGame main, Boolean hasWon) {
         super(main);
         //Stores if the User has Won or Lost
-        hasWon = this.hasWon;
+
+        //Altered for Assessment 4
+        this.hasWon = hasWon;
+        //End Altered
 
         //Table used to store labels to align and position them relatively
         Table uiTable = new Table();

@@ -443,20 +443,26 @@ public class CombatScreen extends BaseScreen {
                     enemy.getCollege().setBossDead(true);
                     this.player.getPlayerShip().getCollege().addAlly(this.enemy.getCollege());
                     displayText = ("Congratulations, you have defeated Enemy " + enemy.getName());
+
+                    //Added for Assessment 4
                     if (this.enemy.getCollege().getName() == "Derwent"){
                         playerShip.setAttack(playerShip.getAttack() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Attack up!", BattleEvent.SCENE_RETURN);
                     } else if (this.enemy.getCollege().getName() == "Vanbrugh"){
-                        playerShip.getDefence(playerShip.getDefence() + 3);
+                        playerShip.setDefence(playerShip.getDefence() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Defence up!", BattleEvent.SCENE_RETURN);
                     } else if (this.enemy.getCollege().getName() == "James"){
-                        playerShip.getDefence(playerShip.getDefence() + 3);
+                        playerShip.setDefence(playerShip.getDefence() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Defence up!", BattleEvent.SCENE_RETURN);
                     } else if (this.enemy.getCollege().getName() == "Goodricke"){
                         playerShip.setAttack(playerShip.getAttack() + 3);
                         dialog("You have defeated " + enemy.getName() + " and you get a new crewmember! Attack up!", BattleEvent.SCENE_RETURN);
+                    } else {
+                        dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);
                     }
-                    dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);
+
+                    //End of Additions
+
                 } else {
                     dialog("Congratulations, you have defeated Enemy " + enemy.getName(), BattleEvent.SCENE_RETURN);
                 }

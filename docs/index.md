@@ -53,7 +53,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/7SeasOfSomething/UnnamedGame/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/7SeasOfSomething/3.14Rates/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
@@ -70,4 +70,4 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <a href="">GitHub (Fix me)</a>
 Used: http://dh.obdurodon.org/jekyll.xhtml and https://github.com/pages-themes/minimal
 
-<img src="https://raw.githubusercontent.com/7SeasOfSomething/UnnamedGame/master/docs/images/kotpancake.jpg" alt="Cat" width="300" height="300">
+<img src="https://raw.githubusercontent.com/7SeasOfSomething/3.14Rates/master/docs/images/kotpancake.jpg" alt="Cat" width="300" height="300">

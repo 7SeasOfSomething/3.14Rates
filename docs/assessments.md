@@ -45,7 +45,7 @@ Assessment stuff
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments2/Testing%20Evidence_.pdf">Testing Evidence</a></p>
 
 
-<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessment2/Updates2.pdf">Updates on Assessment 1 Deliverables</a></p>
+<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments2/Updates2.pdf">Updates on Assessment 1 Deliverables</a></p>
 
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments2/Updates2.pdf">Updated Requirements</a></p>
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments2/Updated%20Requirements%20Elicitation.pdf">Updated Requirement Elicitation</a></p>

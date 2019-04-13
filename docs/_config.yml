@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: Seven Seas Of Something
-description: SEPR Project W.I.P
-baseurl: /All-Hands-On-Deck
+description: SEPR Project
+baseurl: /3.14Rates
 logo: https://raw.githubusercontent.com/7SeasOfSomething/3.14Rates/master/docs/images/Logo.png
 #show_downloads: true #This lets you download the entire current repo, maybe it's not exactly what we're looking for right now.

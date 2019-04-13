@@ -26,4 +26,3 @@ ___
 
 
 
-<img src="https://raw.githubusercontent.com/7SeasOfSomething/3.14Rates/master/docs/images/kotpancake.jpg" alt="Cat" width="300" height="300">

@@ -11,7 +11,7 @@ About Us Page
 # Jordan Layton
 
 <figure>
-  <img src="https://raw.githubusercontent.com/7SeasOfSomething/3.14Rates/master/docs/images/kotkool.jpg" alt="Image of Someone" width="175" height="250">
+  <img src="https://raw.githubusercontent.com/7SeasOfSomething/3.14Rates/master/docs/images/kotkool.png" alt="Image of Someone" width="175" height="250">
   <figcaption>Scrum Manager (Meeting Chair).</figcaption>
 </figure>
 

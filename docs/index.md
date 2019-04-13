@@ -3,15 +3,14 @@
 # Welcome to the site! 
 
 
-Welcome to the Seven Seas Of Something website! This is all still under construction, so please bear with us in the meantime.
+Welcome to the Seven Seas Of Something website! 
 
 
-Currently, Assessment One, Two, and Three are available to download on the Assessments Tab.
+All Assessment documents are now available under the Assessments tab!
 
 
 
 
-Everything below here is kept here just so that we can use the markdown when needs be. Please ignore it
 
 &nbsp;
 

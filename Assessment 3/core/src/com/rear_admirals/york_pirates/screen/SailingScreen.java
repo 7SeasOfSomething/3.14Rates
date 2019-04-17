@@ -77,6 +77,8 @@ public class SailingScreen extends BaseScreen {
      * - Added an instance of the Typhoon class and implemented it, spawning it in a random location on the map.
      * - Made it so that the player takes damage when overlapping the typhoon. Slows the ship down and makes them take damage.
      *   (Damage from typhoon cannot kill player and caps at 1/4th of their max health.
+     * - Two new variables, typhoonTimer and a boolean inTyphoon were added so that the player doesn't take damage for
+     *   entering the Typhoon range for a split moment and to make it feel more balanced and fair.
      * @param main (The instance of the game.)
      */
     public SailingScreen(final PirateGame main) {
@@ -241,6 +243,8 @@ public class SailingScreen extends BaseScreen {
      * Altered for Assessment 4.
      *  - Added an additional check to see if the player overlaps the Typhoon.
      *    If they do, cause them to take damage and slow down by lowering their maximum speed.
+     *    Damage is done via a typhoonTimer and boolean inTyphoon so that it is dealt fairly and
+     *    at regular amounts.
      * @param delta
      */
     @Override

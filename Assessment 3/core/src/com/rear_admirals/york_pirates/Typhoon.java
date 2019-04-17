@@ -11,7 +11,7 @@ import com.rear_admirals.york_pirates.base.PhysicsActor;
 /**
  * Added for Assessment 4.
  * - A physics actor that is randomly placed around the world map
- *   which negatively affects the player if they are in its range.
+ *   which negatively affects the player if they are overlapping the object.
  */
 public class Typhoon extends PhysicsActor {
 

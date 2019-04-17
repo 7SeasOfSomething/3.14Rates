@@ -22,6 +22,13 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static com.rear_admirals.york_pirates.College.Langwith;
 
+/**
+ * The screen that handles combat for the game.
+ *
+ * Altered for Assessment 4.
+ * - Made additions to when the player defeats an enemy
+ *   now awarding them with a new crewmember and their bonus to the ship.
+ */
 public class CombatScreen extends BaseScreen {
 
     // screen layout variables
@@ -329,8 +336,16 @@ public class CombatScreen extends BaseScreen {
         }
     }
 
-    // combat Handler
-    //  This function handles the ship combat using BattleEvent enum type
+    /**
+     * Combat Handler
+     * This function handles the ship combat using BattleEvent enum type
+     *
+     * Altered for Assessment 4
+     *  - Changed the Case statement for when the enemy dies (meaning the player defeated them)
+     *    and awards the player with a new crew member and their attack/defense bonus.
+     *
+     * @param status - The current status of the game and what action has occurred.
+     */
     public void combatHandler(BattleEvent status) {
         //Debugging
         System.out.println("Running combatHandler with status: " + status.toString());

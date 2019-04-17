@@ -8,6 +8,11 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.rear_admirals.york_pirates.base.PhysicsActor;
 
 
+/**
+ * Added for Assessment 4.
+ * - A physics actor that is randomly placed around the world map
+ *   which negatively affects the player if they are in its range.
+ */
 public class Typhoon extends PhysicsActor {
 
     private Texture typhoonTexture;

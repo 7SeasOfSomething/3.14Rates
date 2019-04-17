@@ -26,6 +26,9 @@ import static com.rear_admirals.york_pirates.College.*;
 import static com.rear_admirals.york_pirates.PirateGame.*;
 import static com.rear_admirals.york_pirates.ShipType.*;
 
+/**
+ *
+ */
 public class SailingScreen extends BaseScreen {
 
     private Ship playerShip;
@@ -66,6 +69,16 @@ public class SailingScreen extends BaseScreen {
     private boolean inTyphoon = false;
     //End Altered
 
+
+    /**
+     * The screen that handles the sailing part of the game.
+     *
+     * Altered for Assessment 4.
+     * - Added an instance of the Typhoon class and implemented it, spawning it in a random location on the map.
+     * - Made it so that the player takes damage when overlapping the typhoon. Slows the ship down and makes them take damage.
+     *   (Damage from typhoon cannot kill player and caps at 1/4th of their max health.
+     * @param main (The instance of the game.)
+     */
     public SailingScreen(final PirateGame main) {
         super(main);
 
@@ -223,6 +236,13 @@ public class SailingScreen extends BaseScreen {
 //        System.out.println("IP: im");
     }
 
+
+    /**
+     * Altered for Assessment 4.
+     *  - Added an additional check to see if the player overlaps the Typhoon.
+     *    If they do, cause them to take damage and slow down by lowering their maximum speed.
+     * @param delta
+     */
     @Override
     public void update(float delta) {
         removeList.clear();

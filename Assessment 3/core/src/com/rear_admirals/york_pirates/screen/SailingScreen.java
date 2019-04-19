@@ -27,7 +27,8 @@ import static com.rear_admirals.york_pirates.PirateGame.*;
 import static com.rear_admirals.york_pirates.ShipType.*;
 
 /**
- *
+ * - Added an instance of the typhoon class, the health label variable, and the
+ *   typhoonTimer and inTyphoon variables.
  */
 public class SailingScreen extends BaseScreen {
 
@@ -57,6 +58,9 @@ public class SailingScreen extends BaseScreen {
 
     private Label pointsLabel;
     private Label goldLabel;
+    //Added for Assessment 4
+    private Label healthLabel;
+    //End of additions
     private Label mapMessage;
     private Label hintMessage;
 
@@ -79,6 +83,8 @@ public class SailingScreen extends BaseScreen {
      *   (Damage from typhoon cannot kill player and caps at 1/4th of their max health.
      * - Two new variables, typhoonTimer and a boolean inTyphoon were added so that the player doesn't take damage for
      *   entering the Typhoon range for a split moment and to make it feel more balanced and fair.
+     * - Added an extra UI element, the health label. This shows the player's current health and their maximum health so that
+     *   they are able to keep track of it while sailing, as well as see when they take damage from the typhoon.
      * @param main (The instance of the game.)
      */
     public SailingScreen(final PirateGame main) {
@@ -108,9 +114,20 @@ public class SailingScreen extends BaseScreen {
         goldLabel = new Label(Integer.toString(main.getPlayer().getGold()), main.getSkin(), "default_black");
         goldLabel.setAlignment(Align.left);
 
+        //Added for Assessment 4
+        Label healthTextLabel = new Label("Health:", main.getSkin(), "default_black");
+        healthLabel = new Label(main.getPlayer().getPlayerShip().getHealth() + "/" + main.getPlayer().getPlayerShip().getHealthMax(), main.getSkin(), "default_black");
+        healthLabel.setAlignment(Align.left);
+        //End of Additions
+
         uiTable.add(pointsTextLabel);
         uiTable.add(pointsLabel).width(pointsTextLabel.getWidth());
         uiTable.row();
+        //Added for Assessment 4
+        uiTable.add(healthTextLabel);
+        uiTable.add(healthLabel).width(healthTextLabel.getWidth());
+        uiTable.row();
+        //End of Additions
         uiTable.add(goldTextLabel).fill();
         uiTable.add(goldLabel).fill();
 
@@ -245,6 +262,8 @@ public class SailingScreen extends BaseScreen {
      *    If they do, cause them to take damage and slow down by lowering their maximum speed.
      *    Damage is done via a typhoonTimer and boolean inTyphoon so that it is dealt fairly and
      *    at regular amounts.
+     *  - Added an update for the Health label so that the player would be able to see their current
+     *    health status and their maximum health as it changes.
      * @param delta
      */
     @Override
@@ -394,6 +413,9 @@ public class SailingScreen extends BaseScreen {
         //End Altered
 
         pointsLabel.setText(Integer.toString(pirateGame.getPlayer().getPoints()));
+        //Added for Assessment 4
+        healthLabel.setText(pirateGame.getPlayer().getPlayerShip().getHealth() + "/" + pirateGame.getPlayer().getPlayerShip().getHealthMax());
+        //End of additions
     }
 
     @Override

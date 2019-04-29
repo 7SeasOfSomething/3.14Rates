@@ -76,11 +76,9 @@ Assessment stuff
 
 <p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/ET4.pdf">Evaluation and Testing report</a></p>
 
-<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Impl4.pdf">Implementation</a></p>
+<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Impl4.pdf">Impl4: Implementation Report</a></p>
 
-<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/2b.pdf">2B(May be the entirety of implementation and report, so rename if needed.)</a></p>
-
-<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Review4.pdf">Project review report</a></p>
+<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Review4.pdf">Review4: Project review report</a></p>
 
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Final%20Requirements.pdf">Final Requirements</a></p>
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Testing.pdf">Test Table</a></p>

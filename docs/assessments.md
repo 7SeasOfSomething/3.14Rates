@@ -88,7 +88,7 @@ Assessment stuff
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Post-Game%20survey.pdf">Post-Game Survey</a></p>
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Post-Game%20Survey%20(Responses)%20-%20Form%20responses%201.pdf">Post-Game Survey Responses.pdf</a></p>
 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Post-Game%20Survey%20(Responses).xlsx">Post-Game Survey Responses.xls</a></p>
-
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/User%20Manual.pdf">User Manual</a></p>
 
 
 ![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)

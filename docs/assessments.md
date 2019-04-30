@@ -74,7 +74,7 @@ Assessment stuff
 
 ## Assessment Four
 
-<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/ET4.pdf">Evaluation and Testing report</a></p>
+<p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/ET4.pdf">ET4: Evaluation and Testing report</a></p>
 
 <p> + <a href="https://github.com/7SeasOfSomething/3.14Rates/blob/master/docs/assessments4/Impl4.pdf">Impl4: Implementation Report</a></p>
 
